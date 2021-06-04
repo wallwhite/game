@@ -1,0 +1,28 @@
+.button-old-school {
+    @include size(140px);
+    background: transparent url('../images/button_empty.png') center no-repeat;
+    background-size: contain;
+    color: #a17f2f;
+    transition: all .3s linear;
+    &--pause,
+    &--play {
+        font-size:0;
+        color:transparent;
+    }
+    &--play {
+        background: transparent url('../images/button_play.png') center no-repeat;
+        background-size: contain;
+        &:hover{
+            background: transparent url('../images/button_play_hover.png') center no-repeat;
+            background-size: contain;
+        }
+    }
+    &--pause {
+        background: transparent url('../images/button_pause.png') center no-repeat;
+        background-size: contain;
+        &:hover{
+            background: transparent url('../images/button_pause_hover.png') center no-repeat;
+            background-size: contain;
+        }
+    }
+}

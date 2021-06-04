@@ -1,0 +1,46 @@
+//Flex
+@mixin flex($type: default, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    @if $type == center {
+        justify-content: center;
+        align-items: center;
+    }
+    @else if $type == between-center {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+//Sizes
+@mixin size($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin icon-size($size) {
+    width: $size;
+    height: $size;
+    background-size: $size;
+}
+
+//Pseudo elements
+@mixin pseudo-element($pseudo-element: after, $content: '', $position: absolute) {
+    @if ($pseudo-element == all) {
+        &:after,
+        &:before {
+            content: $content;
+            display: block;
+            position: $position;
+            @content;
+        }
+    }
+    @else {
+        &:#{$pseudo-element} {
+            content: $content;
+            display: block;
+            position: $position;
+            @content;
+        }
+    }
+}

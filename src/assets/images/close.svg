@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M9.18718434,8.12652416 L13.2530483,12.1923882 L12.1923882,13.2530483 L8.12652416,9.18718434 L4.06066017,13.2530483 L3,12.1923882 L7.06586399,8.12652416 L3,4.06066017 L4.06066017,3 L8.12652416,7.06586399 L12.1923882,3 L13.2530483,4.06066017 L9.18718434,8.12652416 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/Close-without-mask" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#FFF" opacity="0.4" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

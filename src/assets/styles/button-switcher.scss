@@ -1,0 +1,32 @@
+.button-switcher {
+    @include flex(center, row);
+    position: relative;
+    box-sizing: border-box;
+    &__item{
+        @include size(50px);
+        margin: 0 5px;
+        transition: all .3s linear;
+        color: #a17f2f;
+        background: url('../images/button_empty.png') center no-repeat;
+        background-size: contain;
+        font-weight: 800;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        outline: 0!important;
+        white-space: nowrap;
+        border: none;
+        user-select: none;
+        font-size: 18px;
+        &:hover {
+            background: url('../images/button_empty_hover.png') center no-repeat;
+            background-size: contain;
+        }
+        &--active {
+            background: url('../images/button_empty_active.png')center no-repeat;
+            background-size: contain;
+            pointer-events: none;
+        }
+        
+    }
+}
